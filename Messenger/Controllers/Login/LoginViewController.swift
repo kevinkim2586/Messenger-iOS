@@ -24,7 +24,39 @@ class LoginViewController: UIViewController {
         field.layer.borderWidth = 1
         field.layer.borderColor = UIColor.lightGray.cgColor
         field.placeholder = "Input Email Address"
+        
+        field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
+        field.leftViewMode = .always
+        field.backgroundColor = .white
         return field
+    }()
+    
+    private let passwordField: UITextField = {
+        let field = UITextField()
+        field.autocapitalizationType = .none
+        field.autocorrectionType = .no
+        field.returnKeyType = .done
+        field.layer.cornerRadius = 12
+        field.layer.borderWidth = 1
+        field.layer.borderColor = UIColor.lightGray.cgColor
+        field.placeholder = "Input Password"
+        
+        field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
+        field.leftViewMode = .always
+        field.backgroundColor = .white
+        field.isSecureTextEntry = true
+        return field
+    }()
+    
+    private let loginButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Log In", for: .normal)
+        button.backgroundColor = .link
+        button.setTitleColor(.white, for: .normal)
+        button.layer.cornerRadius = 12
+        button.layer.masksToBounds = true
+        button.titleLabel?.font = .systemFont(ofSize: 20, weight: .bold)
+        return button
     }()
     
     
@@ -42,6 +74,8 @@ class LoginViewController: UIViewController {
         view.addSubview(scrollView)
         scrollView.addSubview(imageView)
         scrollView.addSubview(emailField)
+        scrollView.addSubview(passwordField)
+        scrollView.addSubview(loginButton)
         
     }
     
@@ -59,8 +93,15 @@ class LoginViewController: UIViewController {
                                   y: imageView.bottom + 10,
                                   width: scrollView.width - 60,
                                   height: 52)
+        passwordField.frame = CGRect(x: 30,
+                                  y: emailField.bottom + 10,
+                                  width: scrollView.width - 60,
+                                  height: 52)
+        loginButton.frame = CGRect(x: 30,
+                                  y: passwordField.bottom + 10,
+                                  width: scrollView.width - 60,
+                                  height: 52)
     }
-    
     
     @objc private func didTapRegister() {
         
