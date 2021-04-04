@@ -215,7 +215,7 @@ class RegisterViewController: UIViewController {
     
     
     func alertUserLoginError() {
-        
+        	
         let alert = UIAlertController(title: "Woops",
                                       message: "Please enter all information to create a new account.",
                                       preferredStyle: .alert)

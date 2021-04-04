@@ -22,6 +22,7 @@
 		7CC641232615FBC300F25391 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC641222615FBC300F25391 /* ProfileViewController.swift */; };
 		7CC64128261600E300F25391 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC64127261600E300F25391 /* Extensions.swift */; };
 		7CC641502616E64200F25391 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CC6414F2616E64200F25391 /* GoogleService-Info.plist */; };
+		7CC641642618587900F25391 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC641632618587900F25391 /* DatabaseManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		7CC641222615FBC300F25391 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		7CC64127261600E300F25391 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7CC6414F2616E64200F25391 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7CC641632618587900F25391 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		DCC66D64149612979B3CDF7E /* Pods-Messenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Messenger.release.xcconfig"; path = "Target Support Files/Pods-Messenger/Pods-Messenger.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +134,7 @@
 				7CC640F02615F9A800F25391 /* AppDelegate.swift */,
 				7CC640F22615F9A800F25391 /* SceneDelegate.swift */,
 				7CC64127261600E300F25391 /* Extensions.swift */,
+				7CC641632618587900F25391 /* DatabaseManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CC641132615FB5A00F25391 /* LoginViewController.swift in Sources */,
+				7CC641642618587900F25391 /* DatabaseManager.swift in Sources */,
 				7CC6411D2615FB9300F25391 /* ViewPlayerViewController.swift in Sources */,
 				7CC641202615FBB000F25391 /* NewConversationViewController.swift in Sources */,
 				7CC641172615FB6800F25391 /* RegisterViewController.swift in Sources */,
